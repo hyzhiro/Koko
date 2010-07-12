@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+<!-- 地図 -->
+<com.google.android.maps.MapView
+    android:id="@+id/map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:apiKey="0BBj2NHZTXqb7xXhtDC6_D_o8wAxjbQNsyU_XRw" />
+<!-- 地図の上に半透明のレイアウトを配置 -->
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#99000080"
+    android:padding="2px" >
+
+    <!-- 地図切り替えのラジオボタン -->
+    <RadioGroup
+        android:id="@+id/mapRadioGroup"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- 通常の地図ボタン -->
+        <RadioButton
+            android:id="@+id/normalMapRadio"
+            android:text="@string/map"
+            android:textColor="#FFFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- 衛星写真ボタン -->
+        <RadioButton
+            android:id="@+id/satelliteMapRadio"
+            android:text="@string/map_satellite"
+            android:textColor="#FFFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <!-- 現在地表示のトグルボタン -->
+    <ToggleButton
+        android:id="@+id/currentLocationToggle"
+        android:layout_gravity="right|center_vertical"
+        android:textOff="@string/current_location_off"
+        android:textOn="@string/current_location_on"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</FrameLayout>

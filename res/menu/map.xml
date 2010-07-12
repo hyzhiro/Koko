@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- メニュー -->
+    <item
+        android:id="@+id/menu_back"
+        android:title="@string/menu_back"
+        android:icon="@android:drawable/ic_menu_add" />
+    <item
+        android:id="@+id/menu_next"
+        android:title="@string/menu_next"
+        android:icon="@android:drawable/ic_menu_add" />
+    <item
+        android:id="@+id/menu_prev"
+        android:title="@string/menu_prev"
+        android:icon="@android:drawable/ic_menu_add" />
+</menu>

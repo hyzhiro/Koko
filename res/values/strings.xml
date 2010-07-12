@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LocationActivity!</string>
+    <string name="app_name">ここ</string>
+    <string name="map">通常</string>
+    <string name="map_satellite">衛星</string>
+    <string name="current_location_on">ON</string>
+    <string name="current_location_off">OFF</string>
+    <string name="menu_start">起動</string>
+    <string name="menu_clear">クリア</string>
+    <string name="menu_demo">デモ</string>
+    <string name="menu_back">戻る</string>
+    <string name="menu_next">＞＞</string>
+    <string name="menu_prev">＜＜</string>
+    <string name="location_message">起動中。。。</string>
+</resources>
